@@ -1,0 +1,14 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: reservas-api
+info:
+  app:
+    name: Reservas API
+    description: API para realizar as reservas
+    version: 0.1.0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka
