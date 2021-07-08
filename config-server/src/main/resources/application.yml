@@ -5,4 +5,4 @@ server:
     config:
       server:
         git:
-          uri: https://github.com/waldecleber/spring-cloud/config-server
+          uri: https://github.com/waldecleber/spring-cloud/tree/main/config-server

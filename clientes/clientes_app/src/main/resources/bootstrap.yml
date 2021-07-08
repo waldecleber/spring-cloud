@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: clientes-api
+
+  cloud:
+    config:
+      uri: https://user:secret@myconfig.mycompany.com
+
+
+info:
+  app:
+    name: Clientes API
+    description: API para buscar os clientes
+    version: 0.1.0
+
+
+#eureka:
+#  client:
+#      serviceUrl:
+#        defaultZone: http://localhost:9000/eureka
