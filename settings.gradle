@@ -1,0 +1,5 @@
+rootProject.name = 'clientes'
+include 'clientes_api'
+include 'clientes_app'
+include 'clientes_impl'
+
