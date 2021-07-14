@@ -1,0 +1,22 @@
+server:
+  port: 9004
+
+zuul:
+  routes:
+    reservas-api:
+      path: /reservas/**
+      stripPrefix: false
+
+spring:
+  application:
+    name: zuul-proxy-service
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:9000/eureka
+  server:
+    eviction-interval-time-in-ms: 1000

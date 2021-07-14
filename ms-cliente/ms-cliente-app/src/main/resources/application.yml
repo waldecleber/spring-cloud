@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: ms-clientes
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+server:
+  port: 9091
+
+test:
+  url: http://noapplicationlocal:8080
+
+info:
+  app:
+    name: Clientes API
+    description: API para buscar os clientes
+    version: 0.1.0
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    enabled-by-default: false
+    web:
+      base-path: /management
+      exposure:
+        include: health, info, env, refresh
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+    env:
+      enabled: true
+    refresh:
+      enabled: true
+
+#eureka:
+#  client:
+#      serviceUrl:
+#        defaultZone: http://localhost:9000/eureka

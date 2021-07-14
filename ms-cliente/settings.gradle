@@ -1,0 +1,4 @@
+rootProject.name = 'ms-cliente'
+include 'ms-cliente-api'
+include 'ms-cliente-impl'
+include 'ms-cliente-app'
